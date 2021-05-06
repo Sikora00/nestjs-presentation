@@ -11,6 +11,7 @@ services:
     ports:
       - ${PORT}:${PORT}
     command: sleep infinity
+    working_dir: /usr/src/app
   db:
     image: mysql:5.7
     ports:
